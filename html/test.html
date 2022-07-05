@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name='viewport' content='maximum-scale=1, width=device-width, user-scalable=no, minimum-scale=1.0, viewport-fit=cover'/>
-	<title>Test 15.4</title>
+	<title>Test scroll</title>
 
 	<style>
 		html,body{
@@ -15,23 +15,29 @@
 		*{
 			box-sizing: border-box;
 		}
+		.wrap{
+			height: 320px;
+			overflow: hidden;
+		}
 		.scroll{
 			width: 320px;
-			height: 320px;
-			border: #333 solid 1px;
+			height: 336px;
+			padding-bottom: 16px;
 			overflow-x: auto;
 			overflow-y: hidden;
 		}
 		.content{
 			width: 640px;
-			height: 200px;
+			height: 100%;
 			background: linear-gradient(45deg, black, transparent);
 		}
 	</style>
 </head>
 <body>
-	<div class="scroll">
-		<div class="content"></div>
+	<div class="wrap">	
+		<div class="scroll">
+			<div class="content"></div>
+		</div>
 	</div>
 </body>
 </html>
