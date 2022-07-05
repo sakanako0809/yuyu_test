@@ -15,6 +15,12 @@
 		*{
 			box-sizing: border-box;
 		}
+
+
+@media (pointer: fine) and (max-resolution: 2dppx),
+screen and (pointer: fine) and (-webkit-max-device-pixel-ratio: 2),
+(-moz-touch-enabled: 0),
+screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
 		/* scroll bar style setting */
 		::-webkit-scrollbar {
 			width: 4px;
@@ -28,11 +34,10 @@
 			background: #F0F0F0;
 			border-radius: 20px;
 		}
-
-	.scroll::-webkit-scrollbar-track {
-		background: #ededed;
-	}
-
+		.scroll::-webkit-scrollbar-track {
+			background: #ededed;
+		}
+}
 		.wrap{
 			height: 320px;
 			overflow: hidden;
