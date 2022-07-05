@@ -15,13 +15,31 @@
 		*{
 			box-sizing: border-box;
 		}
+		/* scroll bar style setting */
+		::-webkit-scrollbar {
+			width: 4px;
+			height: 8px;
+		}
+		::-webkit-scrollbar-thumb {
+			background: rgba(0,0,0,0.16);
+			border-radius: 20px;
+		}
+		::-webkit-scrollbar-track {
+			background: #F0F0F0;
+			border-radius: 20px;
+		}
+
+	.scroll::-webkit-scrollbar-track {
+		background: #ededed;
+	}
+
 		.wrap{
 			height: 320px;
 			overflow: hidden;
 		}
 		.scroll{
 			width: 320px;
-			height: 336px;
+			height: 100%;
 			padding-bottom: 16px;
 			overflow-x: auto;
 			overflow-y: hidden;
